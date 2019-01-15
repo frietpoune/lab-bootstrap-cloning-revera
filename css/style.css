@@ -1,0 +1,36 @@
+.nav-size {
+  width: 1500px;
+}
+
+.red {
+  color: red;
+}
+
+.logo-padding {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.img-back {
+  background-image: url("../starter-code/img/slider-1.jpg");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.title-size {
+  text-align: center;
+}
+
+.red-back {
+  background-color: #ff4740;
+  color: white;
+}
+
+.align {
+  text-align: center;
+}
