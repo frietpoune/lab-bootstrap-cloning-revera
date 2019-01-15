@@ -3,12 +3,7 @@
 }
 
 .red {
-  color: red;
-}
-
-.logo-padding {
-  padding-right: 100px;
-  padding-left: 100px;
+  color: #ff4740;
 }
 
 .img-back {
@@ -22,13 +17,8 @@ h5 {
   text-transform: uppercase;
 }
 
-.title-size {
-  text-align: center;
-}
-
 .red-back {
   background-color: #ff4740;
-  color: white;
 }
 
 .align {

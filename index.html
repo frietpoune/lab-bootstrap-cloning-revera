@@ -23,7 +23,7 @@
     <div class="container">
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-light nav-size ">
-          <a class="navbar-brand logo-padding" href="#">Revera</a>
+          <a class="navbar-brand px-5" href="#">Revera</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -37,6 +37,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+              <!-- Could not make the Home in red with our css file -->
               <li class="nav-item active red">
                 <a class="nav-link " href="#"
                   >Home <span class="sr-only">(current)</span></a
@@ -65,6 +66,7 @@
         </nav>
       </div>
 
+      <!-- Could not figure out how to change the color of the arrows for the Carousel -->
       <div class="row">
         <div
           id="carouselExampleControls"
@@ -78,7 +80,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block title-size">
+              <div class="carousel-caption d-none d-md-block text-center">
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -98,7 +100,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block title-size">
+              <div class="carousel-caption d-none d-md-block text-center">
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -118,7 +120,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block title-size">
+              <div class="carousel-caption d-none d-md-block text-center">
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -138,7 +140,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block title-size">
+              <div class="carousel-caption d-none d-md-block text-center">
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -174,26 +176,28 @@
         </div>
       </div>
 
-      <div class="row red-back">
+
+     
+      <div class="row red-back text-white px-5 py-3">
         <div class="col align">
           <i class="fas fa-cocktail "></i>
-          <h6>Web design</h6>
+          <h6 class="font-weight-bold">Web design</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div class="col align">
-          <i class="fal fa-star"></i>
-          <h6>Web development</h6>
+            <i class="fas fa-star"></i>
+          <h6 class="font-weight-bold">Web development</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div class="col align">
-          <i class="fal fa-heart"></i>
-          <h6>User Interface</h6>
+            <i class="fas fa-heart"></i>
+          <h6 class="font-weight-bold">User Interface</h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -201,63 +205,178 @@
         </div>
       </div>
 
-      <h4>LATEST PROJECTS</h4>
-      <p>FEW OF THE LATEST PORTFOLIO ITEMS</p>
+      <!-- Could not make a greater padding using only bootstrap -->
+      <div class="d-flex align-content-around flex-wrap">
+        <div class="mt-5">
+          <h4>LATEST PROJECTS</h4>
+          <p>FEW OF THE LATEST PORTFOLIO ITEMS</p>
+        </div>
 
-      <div class="row">
-        <div class="col-4">
-          <img
-            src="./starter-code/img/project-1.jpg"
-            class="img-fluid"
-            alt="Responsive image"
-          />One of three columns
+        <!-- col should always equals to 12 -->
+        <!-- pt-3 to make the border visible otherwise it is on the top of the pictures -->
+        <!-- question: why the length of the border is longer than the content??? -->
+        <div class="row border-top pt-3">
+          <div class="col-3">
+            <img
+              src="./starter-code/img/project-1.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/project-2.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/project-3.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/project-4.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
         </div>
-        <div class="col-4">
-          <img
-            src="./starter-code/img/project-2.jpg"
-            class="img-fluid"
-            alt="Responsive image"
-          />One of three columns
+
+        <div class="mt-5">
+          <h4>LATEST ARTICLES</h4>
+          <p>LATEST POSTS FROM THE BLOG</p>
         </div>
-        <div class="col-4">
-          <img
-            src="./starter-code/img/project-3.jpg"
-            class="img-fluid"
-            alt="Responsive image"
-          />One of three columns
-        </div>
-        <div class="col-4">
-          <img
-            src="./starter-code/img/project-4.jpg"
-            class="img-fluid"
-            alt="Responsive image"
-          />One of three columns
+
+        <div class="row border-top pt-3">
+          <div class="col-3">
+            <img
+              src="./starter-code/img/slider-1.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <p class="font-weight-bold mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="text-uppercase">Posted on <span class="text-danger">August 19, 2013</span> by <span class="text-danger">ADM</span></ADM></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/slider-2.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="font-weight-bold mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <p class="text-uppercase">Posted on <span class="text-danger">August 19, 2013</span> by <span class="text-danger">ADM</span></ADM></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/slider-3.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="font-weight-bold mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <p class="text-uppercase">Posted on <span class="text-danger">August 19, 2013</span> by <span class="text-danger">ADM</span></ADM></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="./starter-code/img/slider-4.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            /><p class="font-weight-bold mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <p class="text-uppercase">Posted on <span class="text-danger">August 19, 2013</span> by <span class="text-danger">ADM</span></ADM></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+          </div>
         </div>
       </div>
 
-      <h4>LATEST ARTICLES</h4>
-      <p>LATEST POSTS FROM THE BLOG</p>
+      <!-- How to customize more the size of the padding??? More option than 0 to 5 -->
 
-      <div class="row">
-        <div class="col-4">One of three columns</div>
-        <div class="col-4">One of three columns</div>
-        <div class="col-4">One of three columns</div>
-        <div class="col-4">One of three columns</div>
+      <div class="row px-5 py-3 bg-secondary text-white">
+        <div class="col-3">
+          <heading class="font-weight-bold">REVERA</heading>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-3">
+          <heading class="font-weight-bold">META</heading>
+          <p class="mt-4 pb-2 border-bottom">
+              Lorem ipsum
+            </p>
+            <p class="mt-4 pb-2 border-bottom">
+                Lorem ipsum
+              </p>
+              <p class="mt-4 pb-2 border-bottom">
+                  Lorem ipsum
+                </p>
+                <p class="mt-4 pb-2 border-bottom">
+                    Lorem ipsum
+                  </p>
+        </div>
+        <div class="col-3">
+          <heading class="font-weight-bold">ARCHIVES</heading>
+          <p class="mt-4 pb-2 border-bottom">
+            Lorem ipsum
+          </p>
+          
+        </div>
+        <div class="col-3">
+          <heading class="font-weight-bold">RECENT POSTS</heading>
+          <p class="mt-4 pb-2 border-bottom">
+              Lorem ipsum
+            </p>
+            <p class="mt-4 pb-2 border-bottom">
+                Lorem ipsum
+              </p>
+              <p class="mt-4 pb-2 border-bottom">
+                  Lorem ipsum
+                </p>
+               <p class="mt-4 pb-2 border-bottom">
+              Lorem ipsum
+            </p>
+            <p class="mt-4 pb-2 border-bottom">
+                Lorem ipsum
+              </p>
+              
+        </div>
       </div>
+      <div class="row p-3 bg-dark text-white pl-5">Copyright</div>
 
-      <div class="row">
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-      </div>
-      <div class="row"></div>
-
-      <!-- <div class="row">
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-      </div> -->
+  
     </div>
 
     <script
